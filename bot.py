@@ -17,7 +17,7 @@ def addtask_command(message):
     
 def promt(message):
     promt1 = message.text
-    bot.send_message(message.chat.id, "Выберите стиль картинки, написав цифру выбранного стиля:\n1.KANDINSKY - стандартная генерация\n2.UHD- Детальное фото\n3.ANIME - аниме стиль")
+    bot.send_message(message.chat.id, "Выберите стиль картинки, написав цифру выбранного стиля:\n1.KANDINSKY - абстрактная генерация\n2.UHD- Детальное фото\n3.ANIME - аниме стиль")
     bot.register_next_step_handler(message, promt2,promt1=promt1)
 
 def promt2(message,promt1):
